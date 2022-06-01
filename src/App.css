@@ -1,5 +1,8 @@
-body,html{
+html, body{
+  background: #edede9;
   overflow: hidden;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif
 }
 .App {
   text-align: center;
@@ -17,6 +20,7 @@ h1{
 
 .question-box{
   border: 1px solid black;
+  background-color: #f5ebe0;
   margin : 0% 30%;
   padding: 10px;
   border-radius: 8px;
@@ -24,11 +28,13 @@ h1{
 
 .question{
   letter-spacing: 1px;
+  font-size: 18px;
 }
 
 img{
-  width:65%;
-  height: 40%;
+  width:300px;
+  height: 250px;
+  border-radius: 10px;
 }
 
 .answers{
@@ -43,8 +49,98 @@ img{
  height: 10%;
  border-radius: 8px;
  padding: 8px;
+ letter-spacing: 2px;
+ font-size: 16px;
 }
 
 button:hover{
   cursor: pointer;
+  background-color: rgb(219, 223, 226);
+}
+
+.start-menu{
+  margin: 3% 15%;
+}
+
+.category-text{
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(73, 71, 71);
+}
+.categories{
+  display: flex;
+  justify-content: space-around;
+}
+.category{
+ 
+  margin :10px;
+  width:40%;
+}
+
+.category >button {
+  width: 100%;
+  padding: 100px;
+  font-size: 26px;
+  font-weight: bold;
+  color:rgb(193, 197, 201);
+  letter-spacing: 2px;
+}
+.astronomy > button{
+  background-image: linear-gradient(
+    rgba(46, 45, 45, 0.5),
+    rgba(88, 88, 88, 0.5)
+  ),
+  url("https://c0.wallpaperflare.com/preview/810/495/635/dark-night-stars-stargazing.jpg");
+  background-size: cover;
+  border-radius: 8px;
+}
+.geography > button{
+  background-image: linear-gradient(
+    rgba(46, 45, 45, 0.5),
+    rgba(88, 88, 88, 0.3)
+  ),
+  url("https://www.wallpaperflare.com/static/190/292/921/world-map-white-brown-map-wallpaper.jpg");
+  background-size: cover;
+  border-radius: 8px;
+}
+.history > button{
+  background-image: linear-gradient(
+    rgba(46, 45, 45, 0.5),
+    rgba(88, 88, 88, 0.5)
+  ),
+  url("https://www.press.jhu.edu/sites/default/files/styles/max_325x325/public/2021-09/History.png?itok=uCnkwSRb");
+  background-size: cover;
+  border-radius: 8px;
+}
+.biology > button{
+  background-image: linear-gradient(
+    rgba(46, 45, 45, 0.5),
+    rgba(88, 88, 88, 0.5)
+  ),
+  url("https://blogs.biomedcentral.com/on-biology/wp-content/uploads/sites/5/2017/12/DNA.png");
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.display-score{
+
+  background-color: #e3d5ca;
+  margin:20% 30%;
+  border-radius: 8px;
+  padding: 30px;
+  border: 2px solid rgb(131, 123, 123);
+
+
+}
+
+.display-score > p {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.restart{
+  border-radius: 8px;
+  padding:8px;
 }
