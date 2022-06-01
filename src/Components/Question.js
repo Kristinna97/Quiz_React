@@ -16,9 +16,10 @@ function Question({questions,score,setScore, playable, setPlayable}) {
 		}
     }
 
-    return <div>
-        <div className='question'>
-            <p>{questions[currentQuestion].questionText}</p>
+    return<div className='question-box'>
+        <div className='question-field'>
+            <p className='question'>{questions[currentQuestion].questionText}</p>
+            <img alt ="visual answer" src={questions[currentQuestion].img} ></img>
             <div className='answers'>
                 {questions[currentQuestion].answerOptions.map((answer) => {
                return  <button key={answer.answerText} onClick={() => checkAnswer(answer.isCorrect)}>{answer.answerText}</button>
@@ -27,7 +28,7 @@ function Question({questions,score,setScore, playable, setPlayable}) {
 
         </div>
     </div>
-   
+  
 }
 
 export default Question;
