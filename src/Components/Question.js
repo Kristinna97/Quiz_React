@@ -1,7 +1,7 @@
-import { useState } from 'react';
-function Question({questions,score,setScore, playable, setPlayable}) {
 
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+function Question({questions,score,setScore, playable, setPlayable ,currentQuestion, setCurrentQuestion}) {
+
+    
     
     function checkAnswer(correct) {
         if(correct && playable){
