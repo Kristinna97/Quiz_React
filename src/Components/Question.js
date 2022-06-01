@@ -1,7 +1,5 @@
 
 function Question({questions,score,setScore, playable, setPlayable ,currentQuestion, setCurrentQuestion}) {
-
-    
     
     function checkAnswer(correct) {
         if(correct && playable){
