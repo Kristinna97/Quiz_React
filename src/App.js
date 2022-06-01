@@ -28,9 +28,10 @@ function App() {
     if (category === "") {
       return (
         <>
-          <p>you have to choose category</p>
+        <div className="start-menu">
+        
           <div className="categories">
-            <div className="category">
+            <div className="category astronomy"  >
               <button
                 onClick={() => {
                   setupGame("astronomy", 1);
@@ -39,7 +40,7 @@ function App() {
                 Astronomy
               </button>
             </div>
-            <div className="category">
+            <div className="category geography">
               <button
                 onClick={() => {
                   setupGame("geography", 2);
@@ -50,7 +51,7 @@ function App() {
             </div>
           </div>
           <div className="categories">
-            <div className="category">
+            <div className="category history">
               <button
                 onClick={() => {
                   setupGame("history", 3);
@@ -59,7 +60,7 @@ function App() {
                 History
               </button>
             </div>
-            <div className="category">
+            <div className="category biology">
               <button
                 onClick={() => {
                   setupGame("biology", 4);
@@ -68,6 +69,7 @@ function App() {
                 Biology
               </button>
             </div>
+          </div>
           </div>
         </>
       );
@@ -96,6 +98,7 @@ function App() {
             You scored {score} out of {questions.length}
           </p>
           <button
+          className="restart"
             onClick={() => {
               playAgain();
             }}
